@@ -1,0 +1,100 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+<ion-content>
+
+  <ion-grid><br><br>
+    <ion-row>
+      <ion-col size="12"></ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-list>
+
+          <ion-row>
+            <ion-col>
+
+            </ion-col>
+            <ion-col size="6">
+              <img src="../../assets/img/logo.png" style="width: 100%; height: auto;" alt="">
+            </ion-col>
+            <ion-col>
+
+            </ion-col>
+          </ion-row>
+
+
+          <br>
+          <div class="ion-align-items-center ion-justify-content-center">
+            <ion-item lines="none">
+              <ion-input size="large" placeholder="Nombre" [(ngModel)]="nombre"></ion-input>
+            </ion-item>
+          </div>
+          <br>
+
+          <div class="ion-align-items-center ion-justify-content-center">
+            <ion-item lines="none">
+
+              <ion-input placeholder="Correo Electronico" size="large" [(ngModel)]="email" type="email"></ion-input>
+
+            </ion-item>
+          </div>
+          <br>
+
+          <div class="ion-align-items-center ion-justify-content-center">
+            <ion-item lines="none">
+
+              <ion-input placeholder="Contraseña" size="large" minlength="8" maxlength="16" [(ngModel)]="password"
+                type="password"></ion-input>
+
+            </ion-item>
+          </div>
+          <br>
+
+          <div class="ion-align-items-center ion-justify-content-center">
+            <ion-item lines="none">
+
+              <ion-input placeholder="Confirmar Contraseña" size="large" minlength="8" maxlength="16"
+                [(ngModel)]="passwordCon" type="password">
+              </ion-input>
+            </ion-item>
+
+          </div>
+          <br>
+
+          <ion-button class="iniciar" expand="block" (click)="Registrar()">REGISTRAR</ion-button>
+
+          <ion-button class="registro" expand="full" fill="clear" (click)="Cancelar()">¿YA TIENES CUENTA?, CLICK AQUI
+          </ion-button>
+
+
+
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="height: 10%;">
+      <ion-col size="12"></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+      </ion-col>
+
+      <ion-col size="9">
+        <img src="../../assets/img/redes.png" alt="">
+      </ion-col>
+
+      <ion-col>
+        
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+
+
+
+</ion-content>
